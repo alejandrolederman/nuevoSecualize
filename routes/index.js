@@ -5,11 +5,11 @@ var router = express.Router();
 // var controller = require('../controller')
 /* GET home page. */
 router.get('/',(req, res)=>{
-  res.send("hola")
+  // res.send("hola")
   DB.Pago
   .findAll()
   .then(pagos =>{
-      return res.jason(pagos)
+      return res.json(pagos)
   })
 }
 );
